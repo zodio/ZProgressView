@@ -20,9 +20,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    ZProgressView *tempProgressView = [[ZProgressView alloc] initWithFrame:CGRectMake(60, 40, 200, 40)];
-    [self.view addSubview:tempProgressView];
-    self.progressView = tempProgressView;
+//    ZProgressView *tempProgressView = [[ZProgressView alloc] initWithFrame:CGRectMake(60, 40, 200, 40)];
+//    [self.view addSubview:tempProgressView];
+//    self.progressView = tempProgressView;
     
     UIColor *defaultColor = [UIColor colorWithRed:230/255.0 green:126/255.0 blue:34/255.0 alpha:1.0f];
     self.progressView.progressBarColor = defaultColor;

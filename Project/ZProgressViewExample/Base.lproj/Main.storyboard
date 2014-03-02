@@ -119,6 +119,11 @@
                                     <action selector="removeAllStopsButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="AOU-qd-vTb"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u2r-6k-qzP" customClass="ZProgressView">
+                                <rect key="frame" x="60" y="40" width="200" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <connections>
@@ -129,6 +134,7 @@
                         <outlet property="blueColorComponentTextField" destination="JMH-0V-ftA" id="57s-5T-oB3"/>
                         <outlet property="greenColorComponentTextField" destination="Sfa-Hg-hBo" id="26D-LE-q5j"/>
                         <outlet property="progressTextField" destination="xe8-yd-YUn" id="veE-O5-8aL"/>
+                        <outlet property="progressView" destination="u2r-6k-qzP" id="bxv-kB-vcS"/>
                         <outlet property="redColorComponentTextField" destination="XO4-xk-gwc" id="zeg-H6-HFn"/>
                         <outlet property="stopTextField" destination="kk3-tc-4Xb" id="1Gn-eP-omP"/>
                     </connections>
