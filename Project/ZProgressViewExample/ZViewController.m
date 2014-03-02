@@ -104,4 +104,8 @@
 - (IBAction)removeAllStopsButtonTapped:(id)sender {
     [self.progressView removeAllStops];
 }
+
+- (IBAction)toggleStopVisibilityButtonTapped:(id)sender {
+    self.progressView.showStops = !self.progressView.showStops;
+}
 @end

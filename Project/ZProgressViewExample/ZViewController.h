@@ -23,5 +23,7 @@
 - (IBAction)colorComponentTextFieldValueChanged:(id)sender;
 - (IBAction)backgroundTapped:(id)sender;
 - (IBAction)removeAllStopsButtonTapped:(id)sender;
+- (IBAction)toggleStopVisibilityButtonTapped:(id)sender;
+
 
 @end
