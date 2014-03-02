@@ -15,14 +15,14 @@
 		29319FFB18C302E80006EA5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29319FDD18C302E80006EA5C /* UIKit.framework */; };
 		2931A00318C302E80006EA5C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2931A00118C302E80006EA5C /* InfoPlist.strings */; };
 		2931A00518C302E80006EA5C /* ZProgressViewExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2931A00418C302E80006EA5C /* ZProgressViewExampleTests.m */; };
-		2931A02618C303840006EA5C /* ZProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2931A02518C303840006EA5C /* ZProgressView.m */; };
 		2931A03718C304090006EA5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2931A02B18C304090006EA5C /* Main.storyboard */; };
 		2931A03818C304090006EA5C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2931A02D18C304090006EA5C /* InfoPlist.strings */; };
 		2931A03918C304090006EA5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2931A02F18C304090006EA5C /* Images.xcassets */; };
 		2931A03A18C304090006EA5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2931A03018C304090006EA5C /* main.m */; };
 		2931A03B18C304090006EA5C /* ZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2931A03218C304090006EA5C /* ZAppDelegate.m */; };
 		2931A03D18C304090006EA5C /* ZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2931A03618C304090006EA5C /* ZViewController.m */; };
-		2931A04018C3082F0006EA5C /* ZProgressViewStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 2931A03F18C3082F0006EA5C /* ZProgressViewStop.m */; };
+		2993F6D018C318370039489E /* ZProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2993F6CD18C318370039489E /* ZProgressView.m */; };
+		2993F6D118C318370039489E /* ZProgressViewStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 2993F6CF18C318370039489E /* ZProgressViewStop.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +45,6 @@
 		2931A00018C302E80006EA5C /* ZProgressViewExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZProgressViewExampleTests-Info.plist"; sourceTree = "<group>"; };
 		2931A00218C302E80006EA5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2931A00418C302E80006EA5C /* ZProgressViewExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZProgressViewExampleTests.m; sourceTree = "<group>"; };
-		2931A02418C303840006EA5C /* ZProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZProgressView.h; sourceTree = "<group>"; };
-		2931A02518C303840006EA5C /* ZProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZProgressView.m; sourceTree = "<group>"; };
 		2931A02C18C304090006EA5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2931A02E18C304090006EA5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2931A02F18C304090006EA5C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -57,8 +55,10 @@
 		2931A03418C304090006EA5C /* ZProgressViewExample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZProgressViewExample-Prefix.pch"; sourceTree = "<group>"; };
 		2931A03518C304090006EA5C /* ZViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZViewController.h; sourceTree = "<group>"; };
 		2931A03618C304090006EA5C /* ZViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZViewController.m; sourceTree = "<group>"; };
-		2931A03E18C3082F0006EA5C /* ZProgressViewStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZProgressViewStop.h; sourceTree = "<group>"; };
-		2931A03F18C3082F0006EA5C /* ZProgressViewStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZProgressViewStop.m; sourceTree = "<group>"; };
+		2993F6CC18C318370039489E /* ZProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZProgressView.h; sourceTree = "<group>"; };
+		2993F6CD18C318370039489E /* ZProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZProgressView.m; sourceTree = "<group>"; };
+		2993F6CE18C318370039489E /* ZProgressViewStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZProgressViewStop.h; sourceTree = "<group>"; };
+		2993F6CF18C318370039489E /* ZProgressViewStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZProgressViewStop.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +88,8 @@
 		29319FCD18C302E80006EA5C = {
 			isa = PBXGroup;
 			children = (
+				2993F6CB18C318370039489E /* Classes */,
 				2931A02A18C304090006EA5C /* ZProgressViewExample */,
-				2931A02318C303840006EA5C /* ZProgressView */,
 				29319FFE18C302E80006EA5C /* ZProgressViewExampleTests */,
 				29319FD818C302E80006EA5C /* Frameworks */,
 				29319FD718C302E80006EA5C /* Products */,
@@ -134,17 +134,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2931A02318C303840006EA5C /* ZProgressView */ = {
-			isa = PBXGroup;
-			children = (
-				2931A02418C303840006EA5C /* ZProgressView.h */,
-				2931A02518C303840006EA5C /* ZProgressView.m */,
-				2931A03E18C3082F0006EA5C /* ZProgressViewStop.h */,
-				2931A03F18C3082F0006EA5C /* ZProgressViewStop.m */,
-			);
-			path = ZProgressView;
-			sourceTree = "<group>";
-		};
 		2931A02A18C304090006EA5C /* ZProgressViewExample */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +149,18 @@
 				2931A03618C304090006EA5C /* ZViewController.m */,
 			);
 			path = ZProgressViewExample;
+			sourceTree = "<group>";
+		};
+		2993F6CB18C318370039489E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2993F6CC18C318370039489E /* ZProgressView.h */,
+				2993F6CD18C318370039489E /* ZProgressView.m */,
+				2993F6CE18C318370039489E /* ZProgressViewStop.h */,
+				2993F6CF18C318370039489E /* ZProgressViewStop.m */,
+			);
+			name = Classes;
+			path = ../Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,11 +261,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2931A04018C3082F0006EA5C /* ZProgressViewStop.m in Sources */,
+				2993F6D118C318370039489E /* ZProgressViewStop.m in Sources */,
+				2993F6D018C318370039489E /* ZProgressView.m in Sources */,
 				2931A03B18C304090006EA5C /* ZAppDelegate.m in Sources */,
 				2931A03D18C304090006EA5C /* ZViewController.m in Sources */,
 				2931A03A18C304090006EA5C /* main.m in Sources */,
-				2931A02618C303840006EA5C /* ZProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
