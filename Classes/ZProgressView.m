@@ -24,10 +24,18 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        _progressBarView = [[UIView alloc] initWithFrame:self.bounds];
-        [self addSubview:_progressBarView];
+        [self setup];
     }
     return self;
+}
+
+- (void)awakeFromNib {
+    [self setup];
+}
+
+- (void)setup {
+    _progressBarView = [[UIView alloc] initWithFrame:self.bounds];
+    [self addSubview:_progressBarView];
 }
 
 /*
