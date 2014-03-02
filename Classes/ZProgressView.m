@@ -99,15 +99,16 @@
     
     //Default is 0.5sec for entire bar
     //Find delta
-    CGFloat progressDelta = fabsf(_progress - progress);
-    NSTimeInterval animationDuration = 0.5 * progressDelta;
+    //UPDATE: This kind of animating doesn't work smoothly
+//    CGFloat progressDelta = fabsf(_progress - progress);
+//    NSTimeInterval animationDuration = 0.5 * progressDelta;
     
     _progress = progress;
     NSInteger progressBarWidth = floorf(progress * self.frame.size.width);
     CGRect progressBarFrame = CGRectMake(0, 0, progressBarWidth, self.frame.size.height);
     
     if (animated) {
-        [UIView animateWithDuration:animationDuration animations:^{
+        [UIView animateWithDuration:0.2 animations:^{
             [_progressBarView setFrame:progressBarFrame];
         }];
     } else {
