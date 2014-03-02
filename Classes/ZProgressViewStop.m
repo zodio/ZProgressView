@@ -34,12 +34,10 @@
     if (progressView) {
         self.progressView = progressView;
         
-        if (!self.stopView) {
-            NSInteger stopViewXPosition = floorf(self.position * progressView.frame.size.width);
-            self.stopView = [[UIView alloc] initWithFrame:CGRectMake(stopViewXPosition, 0,
-                                                                     self.width, progressView.frame.size.height)];
-            self.stopView.backgroundColor = self.stopViewColor;
-        }
+        NSInteger stopViewXPosition = floorf(self.position * progressView.frame.size.width);
+        [self.stopView setFrame:CGRectMake(stopViewXPosition, 0,
+                                                                 self.width, progressView.frame.size.height)];
+        self.stopView.backgroundColor = self.stopViewColor;
         
         [progressView addSubview:self.stopView];
         [progressView bringSubviewToFront:self.stopView];
@@ -51,6 +49,14 @@
         [self.stopView removeFromSuperview];
         self.stopView = nil;
     }
+}
+
+- (UIView*)stopView {
+    if (!_stopView) {
+        _stopView = [[UIView alloc] initWithFrame:CGRectZero];
+    }
+    
+    return _stopView;
 }
 
 @end

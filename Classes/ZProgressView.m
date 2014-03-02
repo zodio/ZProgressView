@@ -36,6 +36,7 @@
 - (void)setup {
     _progressBarView = [[UIView alloc] initWithFrame:self.bounds];
     [self addSubview:_progressBarView];
+    _showStops = YES;
 }
 
 /*
@@ -60,6 +61,7 @@
     if (![self _stopExistsAtPosition:position]) {
         ZProgressViewStop *stopToAdd = [ZProgressViewStop stopAtPosition:position];
         [self.stops addObject:stopToAdd];
+        stopToAdd.stopView.hidden = !self.showStops;
         [stopToAdd placeInProgressView:self];
     }
 
@@ -116,6 +118,15 @@
 - (void)setProgressBarColor:(UIColor *)progressBarColor {
     _progressBarColor = progressBarColor;
     [_progressBarView setBackgroundColor:_progressBarColor];
+}
+
+- (void)setShowStops:(BOOL)showStops {
+    if (_showStops != showStops) {
+        _showStops = showStops;
+        for (ZProgressViewStop *stop in self.stops) {
+            stop.stopView.hidden = !_showStops;
+        }
+    }
 }
 
 #pragma mark - Private
