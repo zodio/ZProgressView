@@ -34,9 +34,12 @@
 }
 
 - (void)setup {
-    _progressBarView = [[UIView alloc] initWithFrame:self.bounds];
+    _progressBarView = [[UIView alloc] initWithFrame:CGRectInset(self.bounds, 0, 2)];
     [self addSubview:_progressBarView];
     _showStops = YES;
+    
+    self.autoresizesSubviews = YES;
+    self.clipsToBounds = YES;
 }
 
 /*
@@ -105,7 +108,8 @@
     
     _progress = progress;
     NSInteger progressBarWidth = floorf(progress * self.frame.size.width);
-    CGRect progressBarFrame = CGRectMake(0, 0, progressBarWidth, self.frame.size.height);
+    CGRect progressBarFrame = _progressBarView.frame;
+    progressBarFrame.size.width = progressBarWidth;
     
     if (animated) {
         [UIView animateWithDuration:0.2 animations:^{
