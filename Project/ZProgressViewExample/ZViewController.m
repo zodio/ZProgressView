@@ -27,6 +27,12 @@
     UIColor *defaultColor = [UIColor colorWithRed:230/255.0 green:126/255.0 blue:34/255.0 alpha:1.0f];
     self.progressView.progressBarColor = defaultColor;
     
+    CGRect progressViewFrame = self.progressView.frame;
+    progressViewFrame.origin.x = 5.0f;
+    self.progressView.frame = progressViewFrame;
+    
+    self.progressView.backgroundColor = [UIColor blackColor];
+    
     CGFloat red;
     CGFloat green;
     CGFloat blue;
@@ -37,8 +43,8 @@
     self.greenColorComponentTextField.text = [NSString stringWithFormat:@"%f", green];
     self.blueColorComponentTextField.text = [NSString stringWithFormat:@"%f", blue];
     
-    //rgba(230, 126, 34,1.0)
-    
+
+
 }
 
 - (void)didReceiveMemoryWarning
