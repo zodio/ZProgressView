@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZProgressViewStop.h"
 
 @interface ZProgressView : UIView
 
@@ -21,7 +22,7 @@
 @property (strong, nonatomic) UIColor *progressBarColor;
 
 /**
- *  An array of CGFloat wrapped in NSNumber to indicate where to show stops
+ *  An array of ZProgressViewStop objects
  */
 @property (strong, nonatomic) NSMutableArray *stops;
 

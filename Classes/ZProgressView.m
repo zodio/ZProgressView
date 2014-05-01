@@ -9,7 +9,6 @@
 #define STOP_TAG    100
 
 #import "ZProgressView.h"
-#import "ZProgressViewStop.h"
 
 @interface ZProgressView ()
 
