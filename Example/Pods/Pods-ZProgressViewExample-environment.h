@@ -10,5 +10,5 @@
 #define COCOAPODS_POD_AVAILABLE_ZProgressView
 #define COCOAPODS_VERSION_MAJOR_ZProgressView 0
 #define COCOAPODS_VERSION_MINOR_ZProgressView 3
-#define COCOAPODS_VERSION_PATCH_ZProgressView 0
+#define COCOAPODS_VERSION_PATCH_ZProgressView 1
 
