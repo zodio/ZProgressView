@@ -9,12 +9,12 @@ Pod::Spec.new do |s|
 
 					   Stops can be added and removed dynamically after the progress view has been init'ed. Here's what it looks like:
 
-					   ![screenshot-1](http://github.com/zodio/ZProgressView/Screenshots/ZProgressView-screenshot1.png)
+					   ![screenshot-1](https://github.com/zodio/ZProgressView/Screenshots/ZProgressView-screenshot1.png)
                        DESC
-  s.homepage         = "http://github.com/zodio/ZProgressView"
+  s.homepage         = "https://github.com/zodio/ZProgressView"
   s.license          = 'MIT'
   s.author           = { "Jai Govindani" => "govindani@gmail.com" }
-  s.source           = { :git => "http://github.com/zodio/ZProgressView.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/zodio/ZProgressView.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/govindani'
 
   s.platform     = :ios, '5.0'
