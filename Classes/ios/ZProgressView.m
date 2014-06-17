@@ -39,16 +39,8 @@
     
     self.autoresizesSubviews = YES;
     self.clipsToBounds = YES;
+    self.stopViewColor = [UIColor blueColor];
 }
-
-/*
- // Only override drawRect: if you perform custom drawing.
- // An empty implementation adversely affects performance during animation.
- - (void)drawRect:(CGRect)rect
- {
- // Drawing code
- }
- */
 
 - (NSMutableArray*)stops {
     if (!_stops) {
@@ -62,6 +54,9 @@
     
     if (![self _stopExistsAtPosition:position]) {
         ZProgressViewStop *stopToAdd = [ZProgressViewStop stopAtPosition:position];
+        if (self.stopViewColor) {
+            stopToAdd.stopViewColor = self.stopViewColor;
+        }
         [self.stops addObject:stopToAdd];
         stopToAdd.stopView.hidden = !self.showStops;
         [stopToAdd placeInProgressView:self];
@@ -130,6 +125,17 @@
         for (ZProgressViewStop *stop in self.stops) {
             stop.stopView.hidden = !_showStops;
         }
+    }
+}
+
+- (void)setStopViewColor:(UIColor *)stopViewColor {
+    if (!stopViewColor) {
+        _stopViewColor = [UIColor whiteColor];
+    } else {
+        _stopViewColor = stopViewColor;
+    }
+    for (ZProgressViewStop *stop in self.stops) {
+        stop.stopViewColor = _stopViewColor;
     }
 }
 

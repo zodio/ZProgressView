@@ -59,4 +59,11 @@
     return _stopView;
 }
 
+- (void)setStopViewColor:(UIColor *)stopViewColor {
+    if (stopViewColor) {
+        _stopViewColor = stopViewColor;
+        self.stopView.backgroundColor = _stopViewColor;
+    }
+}
+
 @end

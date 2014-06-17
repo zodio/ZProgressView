@@ -32,6 +32,11 @@
 @property (nonatomic) BOOL showStops;
 
 /**
+ *  Set the default color of stops
+ */
+@property (strong, nonatomic) UIColor *stopViewColor;
+
+/**
  *  Add a stop at the specified position.
  *
  *  @param position Position indicated by a CGFloat between 0 and 1
