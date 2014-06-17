@@ -1,0 +1,14 @@
+PODS:
+  - ZProgressView (0.1.0)
+
+DEPENDENCIES:
+  - ZProgressView (from `../`)
+
+EXTERNAL SOURCES:
+  ZProgressView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ZProgressView: 29787f4af80d2537b34577d9bbcd53a013b4d070
+
+COCOAPODS: 0.33.1

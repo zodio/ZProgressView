@@ -21,8 +21,7 @@
 		2931A03A18C304090006EA5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2931A03018C304090006EA5C /* main.m */; };
 		2931A03B18C304090006EA5C /* ZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2931A03218C304090006EA5C /* ZAppDelegate.m */; };
 		2931A03D18C304090006EA5C /* ZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2931A03618C304090006EA5C /* ZViewController.m */; };
-		2993F6D018C318370039489E /* ZProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2993F6CD18C318370039489E /* ZProgressView.m */; };
-		2993F6D118C318370039489E /* ZProgressViewStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 2993F6CF18C318370039489E /* ZProgressViewStop.m */; };
+		758C4027DAC946438FC148D4 /* libPods-ZProgressViewExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BF72F3745643E19D0F039E /* libPods-ZProgressViewExample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,10 +54,8 @@
 		2931A03418C304090006EA5C /* ZProgressViewExample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZProgressViewExample-Prefix.pch"; sourceTree = "<group>"; };
 		2931A03518C304090006EA5C /* ZViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZViewController.h; sourceTree = "<group>"; };
 		2931A03618C304090006EA5C /* ZViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZViewController.m; sourceTree = "<group>"; };
-		2993F6CC18C318370039489E /* ZProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZProgressView.h; sourceTree = "<group>"; };
-		2993F6CD18C318370039489E /* ZProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZProgressView.m; sourceTree = "<group>"; };
-		2993F6CE18C318370039489E /* ZProgressViewStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZProgressViewStop.h; sourceTree = "<group>"; };
-		2993F6CF18C318370039489E /* ZProgressViewStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZProgressViewStop.m; sourceTree = "<group>"; };
+		88BF72F3745643E19D0F039E /* libPods-ZProgressViewExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZProgressViewExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE4B68FABE814056A0E77361 /* Pods-ZProgressViewExample.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZProgressViewExample.xcconfig"; path = "Pods/Pods-ZProgressViewExample.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +66,7 @@
 				29319FDC18C302E80006EA5C /* CoreGraphics.framework in Frameworks */,
 				29319FDE18C302E80006EA5C /* UIKit.framework in Frameworks */,
 				29319FDA18C302E80006EA5C /* Foundation.framework in Frameworks */,
+				758C4027DAC946438FC148D4 /* libPods-ZProgressViewExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,11 +86,11 @@
 		29319FCD18C302E80006EA5C = {
 			isa = PBXGroup;
 			children = (
-				2993F6CB18C318370039489E /* Classes */,
 				2931A02A18C304090006EA5C /* ZProgressViewExample */,
 				29319FFE18C302E80006EA5C /* ZProgressViewExampleTests */,
 				29319FD818C302E80006EA5C /* Frameworks */,
 				29319FD718C302E80006EA5C /* Products */,
+				DE4B68FABE814056A0E77361 /* Pods-ZProgressViewExample.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +110,7 @@
 				29319FDB18C302E80006EA5C /* CoreGraphics.framework */,
 				29319FDD18C302E80006EA5C /* UIKit.framework */,
 				29319FF818C302E80006EA5C /* XCTest.framework */,
+				88BF72F3745643E19D0F039E /* libPods-ZProgressViewExample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -151,18 +150,6 @@
 			path = ZProgressViewExample;
 			sourceTree = "<group>";
 		};
-		2993F6CB18C318370039489E /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				2993F6CC18C318370039489E /* ZProgressView.h */,
-				2993F6CD18C318370039489E /* ZProgressView.m */,
-				2993F6CE18C318370039489E /* ZProgressViewStop.h */,
-				2993F6CF18C318370039489E /* ZProgressViewStop.m */,
-			);
-			name = Classes;
-			path = ../Classes;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2931A00818C302E80006EA5C /* Build configuration list for PBXNativeTarget "ZProgressViewExample" */;
 			buildPhases = (
+				9E0CC54AA057441B8C0059D8 /* Check Pods Manifest.lock */,
 				29319FD218C302E80006EA5C /* Sources */,
 				29319FD318C302E80006EA5C /* Frameworks */,
 				29319FD418C302E80006EA5C /* Resources */,
+				94CDF1DDB6E14BD4A02A2369 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -208,7 +197,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = Z;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = Zodio;
 				TargetAttributes = {
 					29319FF618C302E80006EA5C = {
@@ -256,13 +245,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		94CDF1DDB6E14BD4A02A2369 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ZProgressViewExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E0CC54AA057441B8C0059D8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		29319FD218C302E80006EA5C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2993F6D118C318370039489E /* ZProgressViewStop.m in Sources */,
-				2993F6D018C318370039489E /* ZProgressView.m in Sources */,
 				2931A03B18C304090006EA5C /* ZAppDelegate.m in Sources */,
 				2931A03D18C304090006EA5C /* ZViewController.m in Sources */,
 				2931A03A18C304090006EA5C /* main.m in Sources */,
@@ -319,7 +339,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -358,7 +377,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -389,6 +407,7 @@
 		};
 		2931A00918C302E80006EA5C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE4B68FABE814056A0E77361 /* Pods-ZProgressViewExample.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -402,6 +421,7 @@
 		};
 		2931A00A18C302E80006EA5C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE4B68FABE814056A0E77361 /* Pods-ZProgressViewExample.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -416,7 +436,6 @@
 		2931A00C18C302E80006EA5C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZProgressViewExample.app/ZProgressViewExample";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -439,7 +458,6 @@
 		2931A00D18C302E80006EA5C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZProgressViewExample.app/ZProgressViewExample";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
